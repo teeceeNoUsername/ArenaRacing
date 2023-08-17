@@ -1,5 +1,6 @@
 <?php
 require_once "Entity.php";
+require_once "Actor.php";
 
 class Movie extends Entity
 {
@@ -31,7 +32,7 @@ class Movie extends Entity
         return $this->releaseDate;
     }
 
-    public function addActor(Actor $actor, $character)
+    public function addActor($actor, $character)
     {
         $this->actors[] = ['actor' => $actor, 'character' => $character];
     }

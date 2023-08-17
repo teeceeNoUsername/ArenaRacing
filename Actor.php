@@ -3,8 +3,8 @@ require_once "Entity.php";
 
 class Actor extends Entity
 {
-    protected $name;
-    protected $dateOfBirth;
+    public $name;
+    public $dateOfBirth;
 
     public function __construct($id, $name, $dateOfBirth)
     {
